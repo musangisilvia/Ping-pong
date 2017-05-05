@@ -1,0 +1,27 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    text-align: justify:center;
+    padding: 50px;
+}
+
+.game h1 {
+    text-align: left;
+    font-size: 36pt;
+}
+
+.game h2 {
+    font-size: 24pt;
+    font-weight: bolder;
+}
+
+.game ul {
+    font-size: 20pt;
+}
+
+#pingpong {
+    font-size: 20pt;
+}
+
+.game .btn {
+    font-size: 20pt;
+}
