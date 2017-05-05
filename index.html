@@ -15,27 +15,32 @@
 <body>
     <div class="conatiner-fluid game">
         <h1>Ping Pong!</h1>
-        <h2>Rules of the Game</h2>
-        <ul>
-            <li>Input any number between 1 and 200</li>
-            <li>If your number is divisible by 3, the output is all the numbers before it and itslef is dipsplayed as "Ping".</li>
-            <li>If your number is divisible by 5, the program outputs all the numbers before it with itself being output as "Pong".</li>
-            <li>If your number is divisible by 15, the output is all other numbers before it, and the number is displayed as "PingPong".</li>
-        </ul>
+        <div class="col-md-4">
+            <h3></h3>
+        </div>
+        <div class="col-md-6">
+            <h2>Rules of the Game</h2>
+            <ul>
+                <li>Input any number between 1 and 200</li>
+                <li>If your number is divisible by 3, the output is all the numbers before it and itslef is dipsplayed as "Ping".</li>
+                <li>If your number is divisible by 5, the program outputs all the numbers before it with itself being output as "Pong".</li>
+                <li>If your number is divisible by 15, the output is all other numbers before it, and the number is displayed as "PingPong".</li>
+            </ul>
 
-        <h2><strong>Let the games begin!</strong></h2>
+            <h2><strong>Let the games begin!</strong></h2>
 
-        <form id="pingpong">
-            <div class="form-group">
-                <label for="number" class="integer">Enter a number</label><br>
-                <input type="number" id="integer" min="1" max="200"></input>
+            <form id="pingpong">
+                <div class="form-group">
+                    <label for="number" class="integer">Enter a number</label><br>
+                    <input type="number" id="integer" min="1" max="200"></input>
+                </div>
+
+                <button type="submit" class="btn btn-inverse">Ping Pong</button>
+            </form>
+
+            <div id="result">
+
             </div>
-
-            <button type="submit" class="btn btn-inverse">Ping Pong</button>
-        </form>
-
-        <div id="result">
-
         </div>
     </div>
 
