@@ -1,19 +1,27 @@
 // business logic
 var pingPong = function(number) {
 
-    var arrayInput = [];
-    for (var i = 1; i <= number; i++);
-    if (number % 3 === 0) {
-        return "ping"
+    for (var i = 1; i <= number; i++) {
+        if (i % 15 === 0) {
+            $("#result").append("<li>" + "pingpong" + "</li>");
+        } else if (i % 5 === 0) {
+            $("#result").append("<li>" + "pong" + "</li>");
+        } else if (i % 3 === 0) {
+            $("#result").append("<li>" + "ping" + "</li>");
+        } else {
+            $("#result").append("<li>" + String(i) + "</li>");
+        }
     };
+
 };
 
 // user interface logic
 $(document).ready(function() {
     $("form#pingpong").submit(function(event) {
         event.preventDefault();
-        var number = $("input#integer").val();
-        var result = pingPong(number);
-        $("#result").append("<li>" + result + "</li>");
+        var numberIn = parseInt($("input#integer").val());
+        // result = pingPong(number);
+        pingPong(numberIn);
+
     });
 });
